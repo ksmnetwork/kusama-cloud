@@ -11,12 +11,17 @@
 * Serveless Setup
 * Full controll on what is send as logs
 
+#### Demo Account ####
+https<area>://ksmnetwork.grafana.net/login
+* demo@ksm<area>.network
+* d3mo@d3mo
+
 #### A snapshot is available to provide you with a fisrt look & feel of it ####
 [SNAPSHOT](https://ksmnetwork.grafana.net/dashboard/snapshot/CY4DF3m7hQJmdRTt1X9K6TzJ5Z3woErt)
 
 * To connect your Validators please request your credentials at the contacts listed below.
 * Currently the Dashboard is available only by API Credentials, since is a POC Project and Grafana Gloud require each user to be at least a Team Member.
-* You can request access to the dashboard at https://ksmnetwork.grafana.net/login
+* You can request access to the dashboard at [Be a member](https://ksmnetwork.grafana.net/login)
 * API credentials: USERNAME:APIKEY
 * [KSMNETWORK GRAFANA CLOUD MEMBERS ACCESS](https://ksmnetwork.grafana.net/login)
 ---
