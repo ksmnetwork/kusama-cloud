@@ -19,6 +19,9 @@
 ## Grafana Cloud ##
 * Create Grafana Cloud Account and obtain your Loki URL 
 * Grafana Dashboard ID: 14899 [Dashboard URL](https://grafana.com/grafana/dashboards/14899) 
+* Mobile Version ID: 14901 [Mobile Dashboard](https://grafana.com/grafana/dashboards/14901)
+
+![Mobile](https://grafana.com/api/dashboards/14901/images/10920/image)
 
 ---
 ## Promtail Installation ##
