@@ -2,7 +2,7 @@
 ### A monitoring service on Grafana Cloud, Loki and Promtail ###
 #### Inspired by [Grafana Account Page](https://grafana.com/grafana/dashboards/14899) ####
 
-![Dashboard](https://github.com/TGReaper/kusama-cloud/raw/main/Screenshot%20from%202021-08-21%2017-32-29.png)
+![Dashboard](https://rmrk.mypinata.cloud/ipfs/bafybeigtp22b45hq4bbjkidxucqnq2e3ielk5bhqvojk4cbz3hjukzots4)
 
 ## Stress less project ###
 ### Grafana Cloud Monitoring for KUSAMA/PolkaDOT Validators is a single agent installation, PROMTAIL ###
