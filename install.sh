@@ -1,10 +1,9 @@
 #!/bin/sh
 
-APIUSER="${1:-}"
-APIKEY="${2:-}"
+DLOKI="${1:-}"
 
-if [ -z "${APIUSER}" ] || [ -z "${APIKEY}" ]; then
-    echo "usage: $0 Username ApiKey"
+if [ -z "${DLOKI}" ]; then
+    echo "usage: $0 Loki Server Full Path"
     exit 1
 fi
 
@@ -14,7 +13,7 @@ server:
   grpc_listen_port: 0
   log_level: error
 clients:
-  - url: https://<TheUSER>:<TheKEY>@logs-prod-us-central1.grafana.net/loki/api/v1/push
+  - url: <dLoki>/loki/api/v1/push
 positions:
   filename: /tmp/positions.yaml
   ignore_invalid_yaml: true
@@ -30,7 +29,6 @@ scrape_configs:
     - source_labels: ['__journal__hostname']
       target_label: 'hostname'
   pipeline_stages:
-   # Drop this logs
   - match:
       selector: '{job="systemd-journal", unit="smartd.service"}'
       action: drop
@@ -63,7 +61,6 @@ scrape_configs:
       selector: '{job="systemd-journal", unit="systemd-logind.service"}'
       action: drop
       drop_counter_reason: systemd_logs
-  # Get this logs
   - match:
       selector: '{job="systemd-journal", unit="polkadot.service"}'
       stages:
@@ -78,5 +75,4 @@ YAML
 )
 
 echo "${CONFIGFILE}" | sed \
-  -e "s#<TheUSER>#${APIUSER}#" \
-  -e "s#<TheKEY>#${APIKEY}#"
+  -e "s#<dLoki>#${DLOKI}#"
