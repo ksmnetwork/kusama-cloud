@@ -13,7 +13,7 @@ server:
   grpc_listen_port: 0
   log_level: error
 clients:
-  - url: <dLoki>/loki/api/v1/push
+  - url: <dLoki>
 positions:
   filename: /tmp/positions.yaml
   ignore_invalid_yaml: true
