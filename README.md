@@ -8,8 +8,9 @@
 ### Grafana Cloud Monitoring for KUSAMA/PolkaDOT Validators is a single agent installation, PROMTAIL ###
 * No need to install Grafana
 * No need to setup Loki
-* Serveless Setup
+* Serveless Setup and Installation
 * Full controll on what is send as logs
+* Error reports [Report Template](https://github.com/TGReaper/kusama-cloud/blob/22fa7557ef4e48737bc6b7522e192a031b040e05/error-report.pdf) 
 
 #### A snapshot is available to provide you with a fisrt look & feel of it ####
 [SNAPSHOT](https://ksmnetwork.grafana.net/dashboard/snapshot/CY4DF3m7hQJmdRTt1X9K6TzJ5Z3woErt)
