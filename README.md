@@ -11,11 +11,6 @@
 * Serveless Setup
 * Full controll on what is send as logs
 
-#### Demo Account ####
-https<area>://ksmnetwork.grafana.net/login
-* demo@ksm<area>.network
-* d3mo@d3mo
-
 #### A snapshot is available to provide you with a fisrt look & feel of it ####
 [SNAPSHOT](https://ksmnetwork.grafana.net/dashboard/snapshot/CY4DF3m7hQJmdRTt1X9K6TzJ5Z3woErt)
 
