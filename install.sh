@@ -30,33 +30,15 @@ scrape_configs:
     - source_labels: ['__journal__hostname']
       target_label: 'hostname'
   pipeline_stages:
-  # Drop this logs
   - match:
-      selector: '{job="systemd-journal", unit="ifup@eth0.service"}'
-      action: drop
-      drop_counter_reason: ifup_logs
-  - match:
-      selector: '{job="systemd-journal", unit="init.scope"}'
-      action: drop
-      drop_counter_reason: promtail_logs
-  - match:
-      selector: '{job="systemd-journal", unit="cron.service"}'
-      action: drop
-      drop_counter_reason: cron_logs
-  - match:
-      selector: '{job="systemd-journal", unit="ssh.service"}'
-      action: drop
-      drop_counter_reason: ssh_logs
-  - match:
-      selector: '{job="systemd-journal", unit="systemd-logind.service"}'
+      selector: '{job!="systemd-journal", unit!="polkadot.service"}'
       action: drop
       drop_counter_reason: systemd_logs
-  # Get this logs
   - match:
       selector: '{job="systemd-journal", unit="polkadot.service"}'
       stages:
       - regex:
-          expression: '(^s?<ts>).*(<output>)'
+          expression: '(^s?<timestamp>).*(<output>)'
       - timestamp:
           source: timestamp
           format: RFC3339Nano
