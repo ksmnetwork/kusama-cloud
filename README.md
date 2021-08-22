@@ -1,4 +1,4 @@
-## Grafana Cloud Monitoring for KUSAMA/PolkaDOT Validators ##
+## Grafana Cloud Monitoring for KUSAMA/PolkaDOT Validators KuELK ##
 ### A monitoring service on Grafana Cloud, Loki and Promtail ###
 #### Inspired by [Grafana Account Page](https://grafana.com/grafana/dashboards/14899) ####
 
@@ -16,6 +16,11 @@
 [SNAPSHOT](https://ksmnetwork.grafana.net/dashboard/snapshot/CY4DF3m7hQJmdRTt1X9K6TzJ5Z3woErt)
 
 ---
+## Grafana Cloud ##
+* Create Grafana Cloud Account and obtain your Loki URL 
+* Grafana Dashboard ID: 14899 [Dashboard URL](https://grafana.com/grafana/dashboards/14899) 
+
+---
 ## Promtail Installation ##
 ```
 apt install sudo unzip -y \
@@ -25,15 +30,11 @@ apt install sudo unzip -y \
 && sudo unzip promtail-linux-amd64.zip
 ```
 
-### Promtail Configuration template, change the ```<DHOST>``` ###
+### Promtail Configuration template, change the ```<DLOKI>``` ###
+###### URL Can be taken from Grafana Cloud Pannel ######
 ```
-curl -fsS https://raw.githubusercontent.com/TGReaper/kusama-cloud/main/install.sh | sh -s <DHOST>
+curl -fsS https://raw.githubusercontent.com/TGReaper/kusama-cloud/main/install.sh | sh -s <DLOKI>
 ```
-
-## The repository can be used as a stand alone, use it as you like ##
-* Create Grafana Cloud Account 
-* Grafana Dashboard ID: 14899
-* Import the [Dashboard](https://grafana.com/grafana/dashboards/14899) 
 
 ---
 # For Support && Nominations #
