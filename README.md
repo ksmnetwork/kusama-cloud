@@ -10,7 +10,7 @@
 * No need to setup Loki
 * Serveless Setup and Installation
 * Full controll on what is send as logs
-* Error reports [Report Template](https://github.com/TGReaper/kusama-cloud/blob/22fa7557ef4e48737bc6b7522e192a031b040e05/error-report.pdf) 
+* Error reports [Report Template](https://github.com/ksmnetwork/kusama-cloud/blob/22fa7557ef4e48737bc6b7522e192a031b040e05/error-report.pdf) 
 
 #### A snapshot is available to provide you with a fisrt look & feel of it ####
 [SNAPSHOT](https://ksmnetwork.grafana.net/dashboard/snapshot/CY4DF3m7hQJmdRTt1X9K6TzJ5Z3woErt)
@@ -36,7 +36,7 @@ apt install sudo unzip -y \
 ### Promtail Configuration template, change the ```<DLOKI>``` ###
 ###### URL Can be taken from Grafana Cloud Pannel ######
 ```
-curl -fsS https://raw.githubusercontent.com/TGReaper/kusama-cloud/main/install.sh | sh -s <DLOKI>
+curl -fsS https://raw.githubusercontent.com/ksmnetwork/kusama-cloud/main/install.sh | sh -s <DLOKI>
 ```
 
 ---
